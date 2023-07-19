@@ -16,6 +16,6 @@ Double check the {dialect} query above for common mistakes, including:
 - When using the 'HAVING' clause in BigQuery queries, ensure that the expressions referenced in the HAVING clause are either grouped or aggregated.
 - When using column aliases in BigQuery, you cannot reference them directly in the 'WHERE' or 'GROUP BY' clauses. Instead, use backticks "```" or leave the alias without any enclosing characters.
 - When specifying data types in BigQuery, use 'STRING' instead of 'VARCHAR'.
-
+- To calculate the average of a TIMESTAMP column, you need to first convert the TIMESTAMP values to a numerical representation (e.g., Unix timestamp) using the `UNIX_SECONDS()`.
 
 If there are any of the above mistakes, rewrite the query. If there are no mistakes, just reproduce the original query."""
